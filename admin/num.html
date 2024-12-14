@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .counter-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      #countdown,
+      #randomNumber {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+    <div>
+      <h2>Countdown Timer</h2>
+      <span id="countdown"></span>
+    </div>
+
+    <div>
+      <h2>Random Number Counter</h2>
+      <span id="randomNumber"></span>
+    </div>
+    <script>
+      // Function to start the countdown timer
+      function startCountdown() {
+        var startTime = new Date().getTime();
+        var endTime = startTime + countdownTime;
+
+        // Call the countdown function
+        countdown(endTime);
+      }
+
+      // Function to update the countdown timer
+      function countdown(endTime) {
+        var now = new Date().getTime();
+        var timeDifference = endTime - now;
+
+        // Check if the countdown has ended
+        if (timeDifference <= 0) {
+          document.getElementById('countdown').innerHTML = 'Countdown Ended';
+
+          // Trigger the random number counter
+          startRandomNumberCounter();
+
+          return;
+        }
+
+        // Convert time difference to hours, minutes, and seconds
+        var minutes = Math.floor(
+          (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        // Display the time remaining
+        document.getElementById('countdown').innerHTML =
+          minutes + 'm ' + seconds + 's ';
+
+        // Update the countdown every second
+        setTimeout(function () {
+          countdown(endTime);
+        }, 1000);
+      }
+
+      // Function to start the random number counter
+      function startRandomNumberCounter() {
+        // Generate a random number
+        var randomNumber = getRandomNumber();
+
+        // Display the random number
+        document.getElementById('randomNumber').innerHTML = randomNumber;
+      }
+
+      // Function to generate a random number between 1 and 100
+      function getRandomNumber() {
+        return Math.floor(Math.random() * 100) + 1;
+      }
+
+      // Prompt the user for the trigger time
+      var triggerHours = prompt('Enter the trigger hour (0-23):');
+      var triggerMinutes = prompt('Enter the trigger minute (0-59):');
+
+      // Create a new Date object for the current time
+      var currentTime = new Date();
+
+      // Create a new Date object for the trigger time
+      var triggerTime = new Date();
+      triggerTime.setHours(triggerHours);
+      triggerTime.setMinutes(triggerMinutes);
+      triggerTime.setSeconds(0); // Set seconds to 0 for precise timing
+
+      // Calculate the time difference between the trigger time and the current time
+      var timeDifference = triggerTime.getTime() - currentTime.getTime();
+
+      // If the trigger time has already passed today, add 24 hours to schedule it for the next day
+      if (timeDifference < 0) {
+        triggerTime.setDate(triggerTime.getDate() + 1);
+        timeDifference = triggerTime.getTime() - currentTime.getTime();
+      }
+
+      // Set the countdown time to the calculated time difference
+      var countdownTime = timeDifference;
+
+      // Start the countdown timer
+      startCountdown();
+    </script>
+  </body>
+</html>

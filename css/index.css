@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #fff;
+  overflow-x: hidden;
+}
+.hero {
+  background-image: url('../img/hero-desktop-v2.png');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #3a1e5600;
+  position: relative;
+}
+.myContainer{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* .custom-shape-divider-bottom-1683725366 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1683725366 svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 161px;
+}
+
+.custom-shape-divider-bottom-1683725366 .shape-fill {
+  fill: #ffffff;
+} */
+
+.textContainer {
+  padding-top: 12rem;
+  margin-left: 3rem;
+  margin: 0;
+  width: 40rem;
+}
+.subHeading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-top: 10px;
+}
+
+.glow {
+  width: 40rem;
+  font-size: 3.75rem;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Text glowing from one shade to other shade */
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(255, 251, 0), 0 0 20px rgba(255, 251, 0, 0.87),
+      0 0 30px rgb(240, 236, 20), 0 0 40px rgba(255, 251, 0, 0.829),
+      0 0 50px rgba(255, 251, 33, 0.904), 0 0 60px rgb(211, 208, 14),
+      0 0 70px rgb(255, 251, 30);
+  }
+  to {
+    text-shadow: 0 0 20px #ffe600, 0 0 30px #ffe600, 0 0 40px #ffe600,
+      0 0 50px #ffe600, 0 0 60px #ffe600, 0 0 70px #ffe600, 0 0 80px #ffe600;
+  }
+}
+
+.heading2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 114px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  color: #553190;
+  padding: 0;
+  height: 5rem;
+}
+.subHeading2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 48px;
+  letter-spacing: 0.11em;
+  color: #502e86;
+}
+
+.numbersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.numberCard {
+  width: 158px;
+  height: 238px;
+  background: #573392;
+  border-radius: 22px;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  transition: all 0.2s ease-out;
+  color: #fff;
+  cursor: pointer;
+  margin: 1rem;
+}
+.numberHeading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.25rem;
+  transition: all 0.08s linear;
+}
+.numberCard:hover {
+  /* scale: 1.05; */
+  background-color: #330a74e1;
+  color: none;
+  border: 2px solid #573392;
+}
+.numberCard:hover .numberHeading {
+  color: #330a74e1;
+  text-shadow: 2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff,
+    -2px -2px 0 #fff;
+}
+
+.hidePopup {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .hero {
+    background-image: url('../img/hero-mobile.png');
+    height: auto;
+    min-height: 100vh;
+    background-size: cover;
+    width: 100vw;
+  }
+  .textContainer {
+    padding-top: 20rem;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .subHeading {
+    font-size: 1rem;
+    justify-content: center;
+  }
+  /* .custom-shape-divider-bottom-1683725366 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1683725366 svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 161px;
+  }
+
+  .custom-shape-divider-bottom-1683725366 .shape-fill {
+    fill: #ffffff;
+  } */
+
+  .textContainer {
+    padding-top: 20rem;
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 40rem;
+    width: 90%; /* Adjust as needed */
+  }
+
+  .subHeading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding-top: 10px;
+  }
+
+  .glow {
+    /* max-width: 40rem; */
+    width: auto; /* Adjust as needed */
+    font-size: 4rem;
+  }
+  .heading2 {
+    font-size: 50px;
+  }
+  .subHeading2 {
+    font-size: 20px;
+  }
+  .numberCard {
+    width: 120px;
+    height: 180px;
+    margin: 0.5rem;
+  }
+
+  .numberHeading {
+    font-size: 4rem;
+  }
+  .numberCard {
+    width: 74px;
+    height: 85px;
+    margin: 0.5rem;
+  }
+  .numberHeading {
+    font-size: 2rem;
+  }
+  .myContainer{
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+}

@@ -1,0 +1,7 @@
+[05-Nov-2024 16:47:03 Asia/Karachi] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/asmitixc/abexch.online/admin/game4/gameCon.php on line 2
+[05-Nov-2024 16:47:03 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game4/script.php on line 6
+[05-Nov-2024 16:47:03 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game4/script.php on line 9
+[05-Nov-2024 16:47:03 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game4/script.php on line 12
+[05-Nov-2024 16:47:03 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game4/script.php on line 15
+[05-Nov-2024 16:47:03 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game4/script.php on line 18
+[05-Nov-2024 16:47:03 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game4/script.php on line 21

@@ -1,0 +1,7 @@
+[07-Aug-2024 12:45:38 Asia/Karachi] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/asmitixc/abexch.online/admin/game3-0/gameCon.php on line 2
+[07-Aug-2024 12:45:38 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game3-0/script.php on line 6
+[07-Aug-2024 12:45:38 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game3-0/script.php on line 9
+[07-Aug-2024 12:45:38 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game3-0/script.php on line 12
+[07-Aug-2024 12:45:38 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game3-0/script.php on line 15
+[07-Aug-2024 12:45:38 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game3-0/script.php on line 18
+[07-Aug-2024 12:45:38 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game3-0/script.php on line 21

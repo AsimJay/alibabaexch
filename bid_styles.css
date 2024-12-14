@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap');
+
+:root {
+  /* --primary-color: #553190; */
+  --primary-color: #084299;
+}
+.navbar {
+  background-color: var(--primary-color);
+}
+.nav-link {
+  font-family: 'Poppins';
+  color: #ffffffcb;
+}
+.nav-link:hover {
+  color: #fff;
+}
+.heading2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 114px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  color: var(--primary-color);
+  padding: 0;
+  height: 5rem;
+}
+.subHeading2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 48px;
+  letter-spacing: 0 !important;
+  color: #594272;
+}
+
+.numbersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.numberCard {
+  width: 158px;
+  height: 238px;
+  background: #594272;
+  border-radius: 11px;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  transition: all 0.2s ease-out;
+  color: #fff;
+  cursor: pointer;
+  margin: 1rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.numberHeading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.25rem;
+  transition: all 0.08s linear;
+}
+.numberCard:hover {
+  /* scale: 1.05; */
+  background-color: #624087;
+  color: none;
+  border: 2px solid #594272;
+}
+.numberCard:hover .numberHeading {
+  color: #594272;
+  text-shadow: 2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff,
+    -2px -2px 0 #fff;
+}
+.amount {
+  font-family: 'Kanit';
+}
+
+.date {
+  max-width: 9rem;
+  text-align: center;
+}
+a:hover{
+    color: #fff;
+}
+.game-button{
+    background-color: #594272 !important;
+}
+@media (max-width: 768px) {
+  .heading2 {
+    font-size: 40px;
+  }
+  .text-dark {
+    font-size: 25px !important;
+  }
+  .numberCard {
+    width: 120px;
+    height: 180px;
+    margin: 0.5rem;
+  }
+
+  .numberHeading {
+    font-size: 4rem;
+  }
+  .numberCard {
+    width: 120px;
+    height: 200px;
+    margin: 0.5rem;
+  }
+  .numberHeading {
+    font-size: 2rem;
+  }
+  .subHeading2 {
+    font-size: 20px;
+    line-break: auto;
+    line-height: 20px;
+  }
+}

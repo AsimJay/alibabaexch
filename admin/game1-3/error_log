@@ -1,0 +1,4 @@
+[28-Jul-2024 22:29:22 Asia/Karachi] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/asmitixc/abexch.online/admin/game1-3/gameCon.php on line 2
+[28-Jul-2024 22:29:22 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game1-3/run_counter.php on line 6
+[04-Sep-2024 22:30:34 Asia/Karachi] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/asmitixc/abexch.online/admin/game1-3/gameCon.php on line 2
+[04-Sep-2024 22:30:34 Asia/Karachi] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/asmitixc/abexch.online/admin/game1-3/run_counter.php on line 6
